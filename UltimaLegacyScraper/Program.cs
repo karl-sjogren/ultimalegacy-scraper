@@ -59,7 +59,7 @@ namespace UltimaLegacyScraper {
 					if (!src.StartsWith("http://") && !src.StartsWith("https://"))
 						src = _baseUrl + src;
 
-					// Put this in a try-catch any image is missing
+					// Put this in a try-catch if any image is missing
 					try {
 						// Download image
 						var buffer = wc.DownloadData(src);
