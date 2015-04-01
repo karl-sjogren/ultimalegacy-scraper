@@ -1,0 +1,25 @@
+﻿/* Oh yes! Columns rule! */
+body {
+	-webkit-columns: 100px 2;
+	-moz-columns: 100px 2;
+	columns: 100px 2;
+	max-width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* 
+  Do not center the first center, it's
+  99% chance to be used as a header */
+span > center:first-child {
+	text-align: left;
+}
+
+/* 
+  The first b in the span (or in a center)
+  seems to be the header so we make it a tiny
+  winy bit larget */
+span > b:first-child,
+span > center > b:first-child {
+	font-size: 19px;
+}
